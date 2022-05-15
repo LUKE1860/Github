@@ -26,6 +26,7 @@ switch (a) {
   case ('*'):
   double d=r*y;
   printf("Equals %lf\n",d);
+  break;
   case ('/'):
   double g=r/y;
   printf("Equals %lf\n",g);
@@ -56,16 +57,15 @@ if(b=='T'){
     break;
     case('T'):
     double tn=tan(z);
-    printf("Equals %lf\n",cn);
+    printf("Equals %lf\n",tn);
     break;
     case('R'):
-    break;
     double sr=asin(z);
-    printf("Radians equals%lf\n",sr);
+    printf("Radians equals %lf\n",sr);
     break;
     case('E'):
     double cr=acos(z);
-    printf("Radians equals%lf\n",cr);
+    printf("Radians equals %lf\n",cr);
     break;
     case('U'):
     double tr=atan(z);
