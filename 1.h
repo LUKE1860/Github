@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <math.h>
+char b;
 char a;
+char h;
 double r;
 double y;
-/*double s=r+y;
-double x=r-y;
-double a=r*y;
-double d=r/y;
-*/
+double z;

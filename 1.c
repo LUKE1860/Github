@@ -4,12 +4,12 @@
 #include <assert.h>
 #include <ctype.h>
 int main(){
+printf("Choose a calculator: N or T\n");
+scanf("%s",&b);
+if(b=='N'){
 printf("+ - * /\n");
-printf("S-sine C-cosine T-tangent\n");
-printf("Sr=sine of radians Cr-cosine of radians Tr=tangent of radians\n");
 printf("Enter a symbol\n");
 scanf("%s",&a);
-assert(isalnum(a));
 printf("Enter a number\n");
 scanf("%lf",&r);
 printf("Enter a second number\n");
@@ -28,10 +28,45 @@ switch (a) {
   printf("Equals %lf\n",d);
   break;
 default:
+break;
 printf("Try again\n");
 }
-
-
+}
+if(b=='T'){
+  printf("S-sine C-cosine T-tangent\n");
+  printf("R=sine of radians E-cosine of radians U=tangent of radians\n");
+  printf("Enter a symbol\n");
+  scanf("%s",&h);
+  printf("Enter a number\n");
+  scanf("%lf",&z);
+  switch(h){
+    case('S'):
+    double sn=sin(z);
+    printf("Equals %lf\n",sn);
+    break;
+    case('C'):
+    double cn=cos(z);
+    printf("Equals %lf\n",cn);
+    break;
+    case('T'):
+    double tn=tan(z);
+    printf("Equals %lf\n",cn);
+    break;
+    case('R'):
+    break;
+    double sr=asin(z);
+    printf("Radians equals%lf\n",sr);
+    break;
+    case('E'):
+    double cr=acos(z);
+    printf("Radians equals%lf\n",cr);
+    break;
+    case('U'):
+    double tr=atan(z);
+    printf("Radians equals %lf\n",tr);
+    break;
+  }
+}
 
 
   return 0;
