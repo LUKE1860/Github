@@ -7,7 +7,7 @@ int main(){
 printf("Choose a calculator: N or T\n");
 scanf("%s",&b);
 if(b=='N'){
-printf("+ - * /\n");
+printf("+ - * / power=P\n");
 printf("Enter a symbol\n");
 scanf("%s",&a);
 printf("Enter a number\n");
@@ -26,14 +26,19 @@ switch (a) {
   case ('*'):
   double d=r*y;
   printf("Equals %lf\n",d);
+  case ('/'):
+  double g=r/y;
+  printf("Equals %lf\n",g);
   break;
-default:
-break;
-printf("Try again\n");
+  case('P'):
+  double pw=pow(r,y);
+  printf("Power equals %lf\n",pw);
+  break;
 }
 }
+
 if(b=='T'){
-  printf("S-sine C-cosine T-tangent\n");
+  printf("S-sine C-cosine T-tangent I-Square root \n");
   printf("R=sine of radians E-cosine of radians U=tangent of radians\n");
   printf("Enter a symbol\n");
   scanf("%s",&h);
@@ -64,6 +69,11 @@ if(b=='T'){
     case('U'):
     double tr=atan(z);
     printf("Radians equals %lf\n",tr);
+    break;
+    case('I'):
+    double sq=sqrt(z);
+    printf("Square root equals %lf\n",sq);
+    default:
     break;
   }
 }
