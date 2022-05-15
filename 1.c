@@ -34,6 +34,8 @@ switch (a) {
   double pw=pow(r,y);
   printf("Power equals %lf\n",pw);
   break;
+  default:
+  break;
 }
 }
 
