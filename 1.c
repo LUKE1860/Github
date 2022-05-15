@@ -38,7 +38,6 @@ switch (a) {
   break;
 }
 }
-
 if(b=='T'){
   printf("S-sine C-cosine T-tangent I-Square root \n");
   printf("R=sine of radians E-cosine of radians U=tangent of radians\n");
@@ -79,7 +78,5 @@ if(b=='T'){
     break;
   }
 }
-
-
   return 0;
 }
