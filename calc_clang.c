@@ -1,9 +1,15 @@
 #include <stdio.h>
 #include <math.h>
 #include <assert.h>
-#include "1.h"
 #include <time.h>
 int main(){
+  char b;
+  char a;
+  char h;
+  double r;
+  double y;
+  double z;
+  
   /*clock_t start_t, end_t;
      double total_t;
 start_t=clock();*/
