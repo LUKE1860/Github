@@ -3,7 +3,11 @@
 #include "1.h"
 #include <assert.h>
 #include <ctype.h>
+#include <time.h>
 int main(){
+  /*clock_t start_t, end_t;
+     double total_t;
+start_t=clock();*/
 printf("Choose a calculator: N or T\n");
 scanf("%s",&b);
 if(b=='N'){
@@ -78,5 +82,9 @@ if(b=='T'){
     break;
   }
 }
+/*end_t=clock();
+printf("%ld\n",end_t);
+total_t=(double)(end_t-start_t);
+printf("%f\n",total_t);*/
   return 0;
 }
